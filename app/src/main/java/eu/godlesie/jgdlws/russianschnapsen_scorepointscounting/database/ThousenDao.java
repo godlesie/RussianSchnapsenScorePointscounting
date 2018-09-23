@@ -20,6 +20,8 @@ public interface ThousenDao {
 
     @Query("SELECT * FROM rozgrywki ORDER BY dateTime ASC")
     LiveData<List<Rozgrywka>> getAllRozgrywki();
+    @Query("SELECT * FROM gry")
+    LiveData<List<Gra>> getAllGra();
     @Query("SELECT * FROM gry where id_rozgrywka LIKE :search ORDER BY id_gra ASC")
     LiveData<List<Gra>> getGryByRozgrywka(long search);
 }
