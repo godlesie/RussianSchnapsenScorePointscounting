@@ -12,6 +12,8 @@ public class Gra {
     @ColumnInfo
     private int id_gra;
     @ColumnInfo
+    private long id_rozgrywka;
+    @ColumnInfo
     private int result_1;
     @ColumnInfo
     private int result_2;
@@ -111,5 +113,22 @@ public class Gra {
 
     public void setRozdaje(int rozdaje) {
         this.rozdaje = rozdaje;
+    }
+
+    @NonNull
+    public int getId_gra() {
+        return id_gra;
+    }
+
+    public void setId_gra(@NonNull int id_gra) {
+        this.id_gra = id_gra;
+    }
+
+    public long getId_rozgrywka() {
+        return id_rozgrywka;
+    }
+
+    public void setId_rozgrywka(long id_rozgrywka) {
+        this.id_rozgrywka = id_rozgrywka;
     }
 }
