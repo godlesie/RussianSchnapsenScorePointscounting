@@ -38,7 +38,7 @@ public class ThousendRepository {
             mAsyncTaskDao = dao;
         }
         @Override
-        protected Void doInBackground(final Rozgrywka ... params) { 
+        protected Void doInBackground(final Rozgrywka ... params) {
             mAsyncTaskDao.insertRozgrywka(params[0]);
             return null;
         }
