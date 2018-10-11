@@ -10,7 +10,7 @@ import android.arch.persistence.room.Update;
 import java.util.List;
 
 @Dao
-public interface ThousenDao {
+public interface ThousendDao {
     @Insert void insertRozgrywka(Rozgrywka ... rozgrywki);
     @Insert void insertGra(Gra ... gry);
     @Update void updateRozgrywka(Rozgrywka rozgrywka);
