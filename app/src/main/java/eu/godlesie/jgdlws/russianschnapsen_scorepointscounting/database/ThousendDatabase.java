@@ -7,7 +7,8 @@ import android.content.Context;
 
 @Database(entities = {Rozgrywka.class,Gra.class}, version = 1)
 public abstract class ThousendDatabase extends RoomDatabase {
-    public abstract ThousendDao thousenDao();
+    public abstract GraDao graDao();
+    public abstract RozgrywkaDao rozgrywkaDao();
     private static volatile ThousendDatabase INSTANCE;
     static ThousendDatabase getDatabase(final Context context) {
         if (INSTANCE == null) {
