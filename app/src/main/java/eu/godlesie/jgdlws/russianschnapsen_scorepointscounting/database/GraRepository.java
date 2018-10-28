@@ -12,7 +12,7 @@ public class GraRepository {
     public LiveData<List<Gra>> getAllGry() {
         return allGry;
     }
-    GraRepository(Application application, int id_rozgrywka) {
+    public GraRepository(Application application, int id_rozgrywka) {
         ThousendDatabase db = ThousendDatabase.getDatabase(application);
         mDao = db.graDao();
         allGry = mDao.getGryForRozgrywka(id_rozgrywka);

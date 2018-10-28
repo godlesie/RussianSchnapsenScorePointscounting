@@ -12,7 +12,7 @@ public class RozgrywkaRepository {
     public LiveData<List<Rozgrywka>> getmAllRozgrywka() {
         return mAllRozgrywka;
     }
-    RozgrywkaRepository(Application application) {
+    public RozgrywkaRepository(Application application) {
         ThousendDatabase db = ThousendDatabase.getDatabase(application);
         mDao = db.rozgrywkaDao();
         mAllRozgrywka = mDao.getAllRozgrywki();

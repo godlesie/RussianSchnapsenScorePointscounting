@@ -3,6 +3,7 @@
     package="eu.godlesie.jgdlws.russianschnapsen_scorepointscounting">
 
     <application
+        android:name=".RussianSchnapsenApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
